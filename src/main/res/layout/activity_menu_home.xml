@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/whitegrey"
+              android:orientation="vertical"
+              tools:context="com.speedata.nrfUARTv2.MenuHomeActivity">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       />
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/action_433"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/rece"
+            android:gravity="center"
+            android:text="433测试"
+            android:textColor="@color/whitegrey"/>
+
+        <TextView
+            android:id="@+id/action_ble"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/action_ble"
+            android:gravity="center"
+            android:text="BLETest"
+            android:textColor="@color/whitegrey"/>
+    </LinearLayout>
+
+<!--    <TextView
+        android:id="@+id/action_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/send"
+        android:gravity="center"
+        android:text="433发送"
+        android:textColor="@color/whitegrey"/>-->
+
+
+
+</LinearLayout>
